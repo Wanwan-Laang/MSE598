@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#
+# jupyter
+#
+/usr/bin/invoke_app "$@" -t fkriging \
+                         -C "start_jupyter -t -T @tool fkriging.ipynb" \
+                         -r none \
+                         -w headless \
+                         -u anaconda-7
